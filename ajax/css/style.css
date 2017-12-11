@@ -1,0 +1,48 @@
+body{
+    font-family: calibri;
+}
+*{
+    box-sizing: border-box;
+}
+h1{
+    margin-bottom: 14px;
+    border-bottom: 3px gray solid;
+    padding-bottom: 6px;
+}
+.main{
+    display: table;
+    margin: auto;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    width: 100%;
+    background: lightgray;
+}
+.main > p,
+.data > p{
+    margin: 0 0 6px;
+    font-size: 20px;
+}
+.main input,
+.main button{
+    border: 1px solid #333;
+    height: 30px;
+    display: table;
+}
+.main input{
+    margin-bottom: 10px;
+    padding:0 5px;
+    width: 200px;
+}
+.main button{
+    cursor: pointer;
+}
+.data{
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-top: 1px solid gray;
+    padding: 0 7px;
+    display: none;
+}
+.data > p{
+    padding: 6px 0 6px;    
+}
