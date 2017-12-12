@@ -22,10 +22,6 @@ if(hours >= 12){
 	meridian = "PM";
 }
 
-var data = function(){
-    var timeMain = "<p style='text-align:center;'>The time is <span style='color:purple'>" + hours + ":" + minutes + ":" + seconds + " " + meridian + "</span></p>";
-    var timeMainTwo = + hours + ":" + minutes + ":" + seconds + " " + meridian;
-    return timeMainTwo;
-}
-
-console.log(setInterval(data,1000));
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
+document.write("Today is <span style='color:red'>" + days[d.getDay()] + "</span><br>");
+document.write("Current time is <span style='color:red'>" + hours + meridian + ":" + minutes + ":" + seconds + "</span>");
