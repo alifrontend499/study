@@ -28,17 +28,26 @@ window.onload = function () {
   // }
   // output.innerHTML += area(6, 4)
   // rotating the string
+  // (function () {
+  //   function rightAlign (str) {
+  //     var mainStr = str.split('')
+  //     var listing = ''
+  //     // console.log(mainStr.length)
+  //     for (var i = mainStr.length - 1; i >= 0; i--) {
+  //       listing += mainStr[i]
+  //     }
+  //     return listing
+  //   }
+  //   output.innerHTML += rightAlign('w3resource')
+  // })()
   (function () {
-    function rightAlign (str) {
-      var mainStr = str.split('')
-      var listing = ''
-      // console.log(mainStr.length)
-      for (var i = mainStr.length - 1; i >= 0; i--) {
-        listing += mainStr[i]
-      }
-      return listing
+    'use strict'
+    var otherArray = ['Ali', 'Karan', 'Raman']
+    var funA = () => {
+      var data = ['all', 'everythin', ...otherArray]
+      return data
     }
-    output.innerHTML += rightAlign('w3resource')
+    console.log(funA().reverse())
+    console.log(Array.prototype)
   })()
-  // canvas
 }
