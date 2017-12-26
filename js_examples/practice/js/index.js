@@ -8,7 +8,7 @@ window.onload = function () {
     elem.innerHTML = '<h1>Js example</h1>'
   })()
   var output = document.querySelector('.output')
-  output.style.cssText = 'background-color:gray;padding:5px 15px;color: #fff;font-size: 1em;';
+  output.style.cssText = 'background-color:gray;padding:5px 15px;color: #fff;font-size: 1em;'
 // main js
 // display date
   // (function () {
@@ -40,14 +40,15 @@ window.onload = function () {
   //   }
   //   output.innerHTML += rightAlign('w3resource')
   // })()
-  (function () {
-    'use strict'
-    var otherArray = ['Ali', 'Karan', 'Raman']
-    var funA = () => {
-      var data = ['all', 'everythin', ...otherArray]
-      return data
+  function leapYear (year) {
+    var data = year.toString().split('')
+    if (parseInt(data[data.length - 1]) === 0 && parseInt(data[data.length - 2]) === 0) {
+      var finalResult1 = year % 400 === 0 ? 'This is a leap year' : 'This is not a leap year'
+      return finalResult1
+    } else {
+      var finalResult2 = year % 4 === 0 ? 'This is a leap year' : 'This is not a leap year'
+      return finalResult2
     }
-    console.log(funA().reverse())
-    console.log(Array.prototype)
-  })()
+  }
+  output.innerHTML += leapYear(2000)
 }
