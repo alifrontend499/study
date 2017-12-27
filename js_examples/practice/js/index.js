@@ -40,15 +40,44 @@ window.onload = function () {
   //   }
   //   output.innerHTML += rightAlign('w3resource')
   // })()
-  function leapYear (year) {
-    var data = year.toString().split('')
-    if (parseInt(data[data.length - 1]) === 0 && parseInt(data[data.length - 2]) === 0) {
-      var finalResult1 = year % 400 === 0 ? 'This is a leap year' : 'This is not a leap year'
-      return finalResult1
-    } else {
-      var finalResult2 = year % 4 === 0 ? 'This is a leap year' : 'This is not a leap year'
-      return finalResult2
-    }
-  }
-  output.innerHTML += leapYear(2000)
+  // finding a leap year
+  // function leapYear (year) {
+  //   var data = year.toString().split('')
+  //   if (parseInt(data[data.length - 1]) === 0 && parseInt(data[data.length - 2]) === 0) {
+  //     var finalResult1 = year % 400 === 0 ? 'This is a leap year' : 'This is not a leap year'
+  //     return finalResult1
+  //   } else {
+  //     var finalResult2 = year % 4 === 0 ? 'This is a leap year' : 'This is not a leap year'
+  //     return finalResult2
+  //   }
+  // }
+  // output.innerHTML += leapYear(2000)
+  // var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thrusday', 'Friday', 'Saturday']
+  // var data = ''
+  // function functionName () {
+  //   var d = new Date()
+  //   for (var i = 2014; i <= 2050; i++) {
+  //     data += d + '</br>'
+  //   }
+  //   if (d.getDay() === 0) {
+  //     return data
+  //   }
+  // }
+  // finding the sunday on years till 2050
+  // console.log('--------------------')
+  // for (var year = 2014; year <= 2050; year++) {
+  //   var newd = new Date(year, 0, 1)
+  //   if (newd.getDay() === 0) {
+  //     output.innerHTML += 'These are the years ' + year + '<br>'
+  //   }
+  // }
+  // console.log('--------------------')
+  // find if the userinput matches with random number
+  // function guess () {
+  //   var randomNumber = Math.round(Math.random() * 10)
+  //   var getInput = window.prompt('Enter Number Between 0 to 10')
+  //   var retData = parseInt(randomNumber) === parseInt(getInput) ? 'Your are right' : 'Your were Wrong the number was ' + parseInt(randomNumber)
+  //   return retData
+  // }
+  // console.log(guess())
 }
