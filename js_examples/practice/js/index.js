@@ -80,4 +80,14 @@ window.onload = function () {
   //   return retData
   // }
   // console.log(guess())
+  // finding percentage of a number
+  // function findPercent (number, percent) {
+  //   return percent + '% of number ' + number + ' is ' + percent * number / 100
+  // }
+  // console.log(findPercent(90, 25))
+  // finding percentage of two number
+  // function findPercentTwoNums (totNum, numGet) {
+  //   return 'The percentage of the numbers is ' + numGet / totNum * 100 + '%'
+  // }
+  // output.innerHTML += findPercentTwoNums(1200, 350)
 }
